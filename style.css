@@ -45,7 +45,10 @@ h1 {
 }
 
 .links a {
-    display: block;
+    display: flex;                  /* 改为 flex，让图标和文字完美垂直居中对齐 */
+    align-items: center;            /* 垂直居中 */
+    justify-content: center;        /* 水平居中 */
+    gap: 16px;                      /* 图标和文字间距（比 margin-right 更灵活） */
     background: rgba(255, 255, 255, 0.95);
     color: #667eea;
     text-decoration: none;
@@ -81,6 +84,20 @@ h1 {
     left: 100%;
 }
 
+/* Font Awesome 图标样式优化 */
+.links a i {
+    font-size: 28px;
+    width: 32px;                    /* 固定宽度，确保所有图标对齐一致 */
+    text-align: center;
+}
+
+/* OnlyFans 图片图标样式（与 Font Awesome 图标大小统一） */
+.links a img.icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
 footer {
     margin-top: 80px;
     opacity: 0.7;
@@ -96,10 +113,11 @@ footer {
         margin: 15px auto;
         font-size: 1.1em;
         padding: 16px;
+        gap: 12px;
     }
-}
-.links a i {
-    margin-right: 16px;
-    font-size: 28px;          /* 图标大小，可以调整 */
-    vertical-align: middle;
+    .links a i, .links a img.icon {
+        font-size: 24px;
+        width: 28px;
+        height: 28px;
+    }
 }
