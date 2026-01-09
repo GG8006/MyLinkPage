@@ -98,3 +98,8 @@ footer {
         padding: 16px;
     }
 }
+.links a i {
+    margin-right: 16px;
+    font-size: 28px;          /* 图标大小，可以调整 */
+    vertical-align: middle;
+}
