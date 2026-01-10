@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp 联系 - 弗</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 90%;
+            padding: 30px;
+        }
+        h1 { font-size: 3.5em; margin: 10px 0; }
+        .subtitle { font-size: 1.5em; opacity: 0.9; margin-bottom: 40px; }
+        .qr-box {
+            background: white;
+            padding: 25px;
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            max-width: 340px;
+            margin: 0 auto 40px;
+        }
+        .qr-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+        }
+        .tip {
+            font-size: 1.3em;
+            line-height: 1.6;
+            max-width: 400px;
+        }
+        .back-btn {
+            margin-top: 40px;
+            padding: 12px 30px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            border: 2px solid white;
+            transition: all 0.3s;
+        }
+        .back-btn:hover {
+            background: white;
+            color: #25D366;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>弗</h1>
+        <p class="subtitle">WhatsApp 联系人</p>
+        
+        <div class="qr-box">
+            <img src="https://i.imgur.com/aW4AoFW.jpeg" alt="WhatsApp 二维码">
+        </div>
+
+        <p class="tip">
+            使用 WhatsApp 相机扫描或上传此二维码，<br>
+            即可添加我为联系人
+        </p>
+
+        <a href="index.html" class="back-btn">← 返回主页面</a>
+    </div>
+</body>
+</html>
