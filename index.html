@@ -36,9 +36,9 @@
             <img src="https://download.logo.wine/logo/WhatsApp/WhatsApp-Logo.wine.png" alt="WhatsApp" class="icon"> WhatsApp
         </a>
         
-        <!-- 以下全部使用 base64 加密隐藏 -->
+        <!-- 以下全部使用你提供的 base64 加密 -->
         <a href="javascript:void(0)" class="protected-link" 
-           data-real-href="aHR0cHM6Ly9yYWluYm93ZnVuZG9sbHMuY29tLw==" 
+           data-real-href="aHR0cHM6Ly9yYWluYm93ZnVuZG9sbHMuY29t" 
            rel="nofollow noopener noreferrer" target="_blank">
             <img src="https://t3.ftcdn.net/jpg/16/11/00/40/360_F_1611004079_mcMRZu36VrXma5mUnjzKuxFnqT55siFR.jpg" alt="Website" class="icon"> Official website
         </a>
@@ -50,7 +50,7 @@
         </a>
         
         <a href="javascript:void(0)" class="protected-link" 
-           data-real-href="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ2labldSV2g1S0pxNGlnUzV5RWxwMmc=" 
+           data-real-href="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ2labldSV2g1S0pxNGlHUzV5RWxwMmc=" 
            rel="nofollow noopener noreferrer" target="_blank">
             <img src="https://t3.ftcdn.net/jpg/06/34/31/96/360_F_634319630_txtgmPLEEQ8o4zaxec2WKrLWUBqdBBQn.jpg" alt="Youtube" class="icon"> Youtube
         </a>
@@ -62,7 +62,7 @@
         </a>
         
         <a href="javascript:void(0)" class="protected-link" 
-           data-real-href="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9mcmFuazg3NjExMS8=" 
+           data-real-href="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9mcmFuazg3NjExMQ==" 
            rel="nofollow noopener noreferrer" target="_blank">
             <img src="https://i.pinimg.com/736x/5c/ae/71/5cae71db70b9ec562c434d8ba79bcecb.jpg" alt="Instagram" class="icon"> Instagram
         </a>
@@ -99,8 +99,8 @@
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
                     const encoded = this.getAttribute('data-real-href');
-                    const realUrl = atob(encoded);  // 浏览器内置 base64 解码
-                    const delay = 200 + Math.floor(Math.random() * 300); // 随机延迟，模拟真人
+                    const realUrl = atob(encoded);  // base64 解码
+                    const delay = 200 + Math.floor(Math.random() * 300); // 随机延迟 200~500ms
                     setTimeout(() => {
                         window.open(realUrl, '_blank', 'noopener,noreferrer');
                     }, delay);
