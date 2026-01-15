@@ -20,7 +20,7 @@
     <!-- 引入分离的 CSS -->
     <link rel="stylesheet" href="style.css">
     
-    <!-- Font Awesome 最新版 CDN（已修复完整 integrity，确保加载成功） -->
+    <!-- Font Awesome 最新版 CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMnvc1G5h4ehW3B0s5Z8o6b5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -31,34 +31,57 @@
     </div>
 
     <div class="links">
-        <!-- WhatsApp 链接 - 点击跳转到二维码展示页（本地页面，不需隐藏） -->
+        <!-- WhatsApp 保持原样（本地页面，不需加密） -->
         <a href="whatsapp-qr.html" target="_blank" rel="nofollow noopener noreferrer">
             <img src="https://download.logo.wine/logo/WhatsApp/WhatsApp-Logo.wine.png" alt="WhatsApp" class="icon"> WhatsApp
         </a>
         
-        <!-- 以下链接使用保护：隐藏真实 href，用 JS 动态跳转 + base64 加密 -->
-        <a href="javascript:void(0)" class="protected-link" data-real-href="aHR0cHM6Ly9yYWluYm93ZnVuZG9sbHMuY29t" rel="nofollow noopener noreferrer" target="_blank">
+        <!-- 以下全部使用 base64 加密隐藏 -->
+        <a href="javascript:void(0)" class="protected-link" 
+           data-real-href="aHR0cHM6Ly9yYWluYm93ZnVuZG9sbHMuY29tLw==" 
+           rel="nofollow noopener noreferrer" target="_blank">
             <img src="https://t3.ftcdn.net/jpg/16/11/00/40/360_F_1611004079_mcMRZu36VrXma5mUnjzKuxFnqT55siFR.jpg" alt="Website" class="icon"> Official website
         </a>
-        <a href="javascript:void(0)" class="protected-link" data-real-href="aHR0cHM6Ly93d3cudGlrdG9rLmNvbS9AbWl5b3VjaGlidWJhbw==" rel="nofollow noopener noreferrer" target="_blank">
+        
+        <a href="javascript:void(0)" class="protected-link" 
+           data-real-href="aHR0cHM6Ly93d3cudGlrdG9rLmNvbS9AbWl5b3VjaGlidWJhbw==" 
+           rel="nofollow noopener noreferrer" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" class="icon"> TikTok
         </a>
-        <a href="javascript:void(0)" class="protected-link" data-real-href="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ2labldSV2g1S0pxNGlHUzV5RWxwMmc=" rel="nofollow noopener noreferrer" target="_blank">
+        
+        <a href="javascript:void(0)" class="protected-link" 
+           data-real-href="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ2labldSV2g1S0pxNGlnUzV5RWxwMmc=" 
+           rel="nofollow noopener noreferrer" target="_blank">
             <img src="https://t3.ftcdn.net/jpg/06/34/31/96/360_F_634319630_txtgmPLEEQ8o4zaxec2WKrLWUBqdBBQn.jpg" alt="Youtube" class="icon"> Youtube
         </a>
-        <a href="javascript:void(0)" class="protected-link" data-real-href="aHR0cHM6Ly94LmNvbS9IYW5nV3U2MTYxNQ==" rel="nofollow noopener noreferrer" target="_blank">
+        
+        <a href="javascript:void(0)" class="protected-link" 
+           data-real-href="aHR0cHM6Ly94LmNvbS9IYW5nV3U2MTYxNQ==" 
+           rel="nofollow noopener noreferrer" target="_blank">
             <img src="https://i.pinimg.com/736x/c1/4e/a3/c14ea380b013465cb3819d9389b0e3a8.jpg" alt="X" class="icon"> Twitter / X
         </a>
-        <a href="javascript:void(0)" class="protected-link" data-real-href="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9mcmFuazg3NjExMQ==" rel="nofollow noopener noreferrer" target="_blank">
+        
+        <a href="javascript:void(0)" class="protected-link" 
+           data-real-href="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9mcmFuazg3NjExMS8=" 
+           rel="nofollow noopener noreferrer" target="_blank">
             <img src="https://i.pinimg.com/736x/5c/ae/71/5cae71db70b9ec562c434d8ba79bcecb.jpg" alt="Instagram" class="icon"> Instagram
         </a>
-        <a href="javascript:void(0)" class="protected-link" data-real-href="aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3Byb2ZpbGUucGhwP2lkPTYxNTg2MDUzNjYyODQ1" rel="nofollow noopener noreferrer" target="_blank">
+        
+        <a href="javascript:void(0)" class="protected-link" 
+           data-real-href="aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3Byb2ZpbGUucGhwP2lkPTYxNTg2MDUzNjYyODQ1" 
+           rel="nofollow noopener noreferrer" target="_blank">
             <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/facebook-logo-2019-thumb.png" alt="Facebook" class="icon"> Facebook
         </a>
-        <a href="javascript:void(0)" class="protected-link" data-real-href="aHR0cHM6Ly93d3cucmVkZGl0LmNvbS9yL1JhaW5ib3dGdW5Eb2xscw==" rel="nofollow noopener noreferrer" target="_blank">
+        
+        <a href="javascript:void(0)" class="protected-link" 
+           data-real-href="aHR0cHM6Ly93d3cucmVkZGl0LmNvbS9yL1JhaW5ib3dGdW5Eb2xscy8=" 
+           rel="nofollow noopener noreferrer" target="_blank">
             <img src="https://download.logo.wine/logo/Reddit/Reddit-Logo.wine.png" alt="Reddit" class="icon"> Reddit
         </a>
-        <a href="javascript:void(0)" class="protected-link" data-real-href="aHR0cHM6Ly9vbmx5ZmFucy5jb20v" rel="nofollow noopener noreferrer" target="_blank">
+        
+        <a href="javascript:void(0)" class="protected-link" 
+           data-real-href="aHR0cHM6Ly9vbmx5ZmFucy5jb20v" 
+           rel="nofollow noopener noreferrer" target="_blank">
             <img src="https://www.pngall.com/wp-content/uploads/13/Onlyfans-Logo-PNG-File.png" alt="OnlyFans" class="icon"> OnlyFans（18+）
         </a>
     </div>
@@ -67,18 +90,17 @@
         &copy; 2026 Rainbow Fun Dolls | All Rights Reserved
     </footer>
 
-    <!-- 原有 script.js -->
     <script src="script.js"></script>
     
-    <!-- 反爬虫 JS 代码（已支持 base64 解码） -->
+    <!-- 反爬虫 JS（支持 base64 解码） -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('.protected-link').forEach(function(link) {
                 link.addEventListener('click', function(e) {
-                    e.preventDefault();  // 阻止默认行为
+                    e.preventDefault();
                     const encoded = this.getAttribute('data-real-href');
-                    const realUrl = atob(encoded);  // base64 解码
-                    const delay = 200 + Math.floor(Math.random() * 300); // 随机延迟 200~500ms
+                    const realUrl = atob(encoded);  // 浏览器内置 base64 解码
+                    const delay = 200 + Math.floor(Math.random() * 300); // 随机延迟，模拟真人
                     setTimeout(() => {
                         window.open(realUrl, '_blank', 'noopener,noreferrer');
                     }, delay);
